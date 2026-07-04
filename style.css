@@ -1,0 +1,44 @@
+
+input:valid {
+  border: 2px solid rgb(6, 189, 6);
+  background-color: #e8f5e9; 
+  background: url(https://img.icons8.com/color/48/checked--v1.png);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px 20px;
+  padding-left: 40px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+input:invalid {
+  border: 2px solid red;
+  background-color: #ffebee;
+   background: url(https://img.icons8.com/color/48/cancel--v1.png);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px 20px;
+  padding-left: 40px;
+  height: 40px;
+  box-sizing: border-box; 
+}
+
+.error {
+    color: red;
+}
+
+.validado {
+    color: green;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
