@@ -1,44 +1,97 @@
 
-input:valid {
-  border: 2px solid rgb(6, 189, 6);
-  background-color: #e8f5e9; 
-  background: url(https://img.icons8.com/color/48/checked--v1.png);
-  background-repeat: no-repeat;
-  background-position: 10px center;
-  background-size: 20px 20px;
-  padding-left: 40px;
-  height: 40px;
-  box-sizing: border-box;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-input:invalid {
-  border: 2px solid red;
-  background-color: #ffebee;
-   background: url(https://img.icons8.com/color/48/cancel--v1.png);
-  background-repeat: no-repeat;
-  background-position: 10px center;
-  background-size: 20px 20px;
-  padding-left: 40px;
-  height: 40px;
-  box-sizing: border-box; 
+.form-container {
+    background-color: #ce84df;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
 }
 
-.error {
-    color: red;
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-.validado {
-    color: green;
+.form-group label {
+    font-weight: bold;
+    color: #2b103c;
+    margin-bottom: 8px;
 }
- 
 
 
+input[type="text"],
+input[type="number"],
+select {
+    padding: 12px 12px 12px 40px; /* Espacio de 40px a la izquierda para el ícono */
+    border: 2px solid #2b103c;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+input[type="text"]:focus:valid,
+input[type="number"]:focus:valid,
+select:focus:valid {
+    border-color: #2e7d32;
+    background: #e8f5e9 url('https://upload.wikimedia.org/wikipedia/commons/3/3b/Check_icon_green.svg') no-repeat 10px center / 20px 20px;
+}
 
 
+input[type="text"]:focus:invalid,
+input[type="number"]:focus:invalid,
+select:focus:invalid {
+    border-color: #c62828;
+    background: #ffebee url('https://upload.wikimedia.org/wikipedia/commons/8/8f/Flat_cross_icon.svg') no-repeat 10px center / 20px 20px;
+}
 
 
+.radio-group {
+    display: flex;
+    gap: 15px;
+}
+
+.radio-group label, 
+.checkbox-group label {
+    font-weight: normal;
+    color: #2b103c;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 
 
+.btn-submit {
+    background-color: #e000b8;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
 
-
-
+.btn-submit:hover {
+    background-color: #b80096;
+}
